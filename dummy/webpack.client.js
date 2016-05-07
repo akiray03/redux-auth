@@ -29,7 +29,7 @@ module.exports = {
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
       { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=image/svg+xml" },
       { include: /\.json$/, loaders: ["json"] },
-      { include: /\.js$/, loaders: ["babel?cacheDirectory&presets[]=es2015&presets[]=react&presets[]=stage-0"], exclude: /node_modules/ },
+      { include: /\.jsx?$/, loaders: ["babel?cacheDirectory&presets[]=es2015&presets[]=react&presets[]=stage-0"], exclude: /node_modules/ },
       { test: /\.scss$/, loaders: ["style", "css", "sass"] }
     ],
     postLoaders: [
@@ -48,7 +48,7 @@ module.exports = {
       "../node_modules",
       "web_modules"
     ],
-    extensions: ["", ".json", ".js"]
+    extensions: ["", ".json", ".js", ".jsx"]
   },
   node:    {
     __dirname: true,

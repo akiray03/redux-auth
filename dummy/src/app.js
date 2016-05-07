@@ -13,6 +13,7 @@ import Container from "./views/partials/Container";
 import Main from "./views/Main";
 import Account from "./views/Account";
 import SignIn from "./views/SignIn";
+import LandingPage from "./views/LandingPage";
 import GlobalComponents from "./views/partials/GlobalComponents";
 
 class App extends React.Component {
@@ -52,7 +53,8 @@ export function initialize({cookies, isServer, currentLocation, userAgent} = {})
   // define app routes
   var routes = (
     <Route path="/" component={App}>
-      <IndexRoute component={Main} />
+      <IndexRoute component={LandingPage} />
+      <Route path="auth" component={Main} />
       <Route path="login" component={SignIn} />
       <Route path="account" component={Account} onEnter={requireAuth} />
     </Route>
