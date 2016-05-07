@@ -1,7 +1,7 @@
 import React from "react";
 import {Provider} from "react-redux";
 import {Route, IndexRoute} from "react-router";
-import {configure, authStateReducer} from "../../src";
+import {configure, authStateReducer} from "./index";
 import {createStore, compose, applyMiddleware} from "redux";
 import {Router, createMemoryHistory, browserHistory} from "react-router";
 import {routeReducer, syncHistory} from "react-router-redux";

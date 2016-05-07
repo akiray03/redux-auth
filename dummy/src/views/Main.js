@@ -8,7 +8,7 @@ import { PageHeader, Row, ButtonGroup, Table } from "react-bootstrap";
 import { connect } from "react-redux";
 import * as BSTheme from "../../../src/views/bootstrap";
 import * as DefaultTheme from "../../../src/views/default";
-import * as MUITheme from "../../../src/views/material-ui";
+import * as MUITheme from "../components/auth"
 import Select from "react-select";
 
 

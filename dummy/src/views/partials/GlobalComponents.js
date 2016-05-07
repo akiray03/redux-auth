@@ -3,7 +3,7 @@ import RequestTestSuccessModal from "./RequestTestSuccessModal";
 import RequestTestErrorModal from "./RequestTestErrorModal";
 import * as BSTheme from "../../../../src/views/bootstrap";
 import * as DefaultTheme from "../../../../src/views/default";
-import * as MUITheme from "../../../../src/views/material-ui";
+import * as MUITheme from "../../components/auth";
 import { connect } from "react-redux";
 
 class GlobalComponents extends React.Component {
