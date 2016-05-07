@@ -21,7 +21,7 @@ class CodeSnippet extends React.Component {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/  +/g, " ")
-    .replace(/±/g, " ");
+    .replace(/賊/g, " ");
     let el = $(`<code class="${this.props.language}">${code}</code>`)[0];
     hljs.highlightBlock(el);
     $target.append(el);
