@@ -6,9 +6,7 @@ import RequestTestButton from "./partials/RequestTestButton";
 import { updateDemoTheme, updateDemoEndpoint } from "../actions/demo-ui";
 import { PageHeader, Row, ButtonGroup, Table } from "react-bootstrap";
 import { connect } from "react-redux";
-import * as BSTheme from "../../../src/views/bootstrap";
-import * as DefaultTheme from "../../../src/views/default";
-import * as MUITheme from "../components/auth"
+import * as MUITheme from "../components/auth/index"
 import Select from "react-select";
 
 
@@ -28,17 +26,6 @@ class Main extends React.Component {
     let endpointAttr = (this.props.pageEndpoint === "default")
       ? ""
       : "endpoint=\"evilUser\"";
-
-    switch(this.props.theme) {
-      case "default":
-        Theme = DefaultTheme;
-        themePath = "";
-        break;
-      case "bootstrap":
-        Theme = BSTheme;
-        themePath = "/bootstrap-theme";
-        break;
-    }
 
     return (
       <div>

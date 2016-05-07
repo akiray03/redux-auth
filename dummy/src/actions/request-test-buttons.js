@@ -1,4 +1,4 @@
-import {fetch} from "../../../src/index";
+import {fetch} from "../index";
 
 export const REQUEST_TEST_START    = "REQUEST_TEST_START";
 export const REQUEST_TEST_COMPLETE = "REQUEST_TEST_COMPLETE";

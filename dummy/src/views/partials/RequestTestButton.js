@@ -1,9 +1,9 @@
 import React, { PropTypes } from "react";
 import {Glyphicon} from "react-bootstrap";
-import {ButtonLoader} from "../../../../src/views/bootstrap";
+import {ButtonLoader} from "../../components/auth/index"
 import {connect} from "react-redux";
 import {requestTest} from "../../actions/request-test-buttons";
-import {getApiUrl} from "../../../../src/utils/session-storage";
+import {getApiUrl} from "../../utils/session-storage";
 
 class RequestTestButton extends React.Component {
   static propTypes = {
