@@ -43,10 +43,7 @@ module.exports = {
     },
     modulesDirectories: [
       "src",
-      "../src",
       "node_modules",
-      "../node_modules",
-      "web_modules"
     ],
     extensions: ["", ".json", ".js", ".jsx"]
   },
